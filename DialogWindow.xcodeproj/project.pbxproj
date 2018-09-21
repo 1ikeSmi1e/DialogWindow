@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842C40662154C3C000BB7D43 /* YSTDialogBoxController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C40642154C3C000BB7D43 /* YSTDialogBoxController.m */; };
+		842C40672154C3C000BB7D43 /* YSTDialogBoxController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842C40652154C3C000BB7D43 /* YSTDialogBoxController.xib */; };
+		842C406C2154C8BD00BB7D43 /* YSTRippleAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C406A2154C8BD00BB7D43 /* YSTRippleAnimationController.m */; };
+		842C406D2154C8BD00BB7D43 /* YSTRippleAnimationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842C406B2154C8BD00BB7D43 /* YSTRippleAnimationController.xib */; };
 		844B4C4721548D7F00DB10C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B4C4621548D7F00DB10C6 /* AppDelegate.m */; };
 		844B4C4A21548D7F00DB10C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B4C4921548D7F00DB10C6 /* ViewController.m */; };
 		844B4C4D21548D7F00DB10C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844B4C4B21548D7F00DB10C6 /* Main.storyboard */; };
@@ -29,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842C40632154C3C000BB7D43 /* YSTDialogBoxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTDialogBoxController.h; sourceTree = "<group>"; };
+		842C40642154C3C000BB7D43 /* YSTDialogBoxController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTDialogBoxController.m; sourceTree = "<group>"; };
+		842C40652154C3C000BB7D43 /* YSTDialogBoxController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSTDialogBoxController.xib; sourceTree = "<group>"; };
+		842C40692154C8BD00BB7D43 /* YSTRippleAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTRippleAnimationController.h; sourceTree = "<group>"; };
+		842C406A2154C8BD00BB7D43 /* YSTRippleAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTRippleAnimationController.m; sourceTree = "<group>"; };
+		842C406B2154C8BD00BB7D43 /* YSTRippleAnimationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YSTRippleAnimationController.xib; sourceTree = "<group>"; };
 		844B4C4221548D7F00DB10C6 /* DialogWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialogWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844B4C4521548D7F00DB10C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		844B4C4621548D7F00DB10C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,11 +91,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842C40622154C3A600BB7D43 /* DialogWindow */ = {
+			isa = PBXGroup;
+			children = (
+				842C40632154C3C000BB7D43 /* YSTDialogBoxController.h */,
+				842C40642154C3C000BB7D43 /* YSTDialogBoxController.m */,
+				842C40652154C3C000BB7D43 /* YSTDialogBoxController.xib */,
+				844B4C5B21548DBD00DB10C6 /* YSTDialogBoxWindow.h */,
+				844B4C5C21548DBD00DB10C6 /* YSTDialogBoxWindow.m */,
+			);
+			path = DialogWindow;
+			sourceTree = "<group>";
+		};
+		842C40682154C8AF00BB7D43 /* RippleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				842C40692154C8BD00BB7D43 /* YSTRippleAnimationController.h */,
+				842C406A2154C8BD00BB7D43 /* YSTRippleAnimationController.m */,
+				842C406B2154C8BD00BB7D43 /* YSTRippleAnimationController.xib */,
+			);
+			path = RippleAnimation;
+			sourceTree = "<group>";
+		};
 		844B4C3921548D7F00DB10C6 = {
 			isa = PBXGroup;
 			children = (
 				844B4C4421548D7F00DB10C6 /* DialogWindow */,
 				844B4C4321548D7F00DB10C6 /* Products */,
+				844B4C5E21548ED800DB10C6 /* Masonry */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +133,6 @@
 		844B4C4421548D7F00DB10C6 /* DialogWindow */ = {
 			isa = PBXGroup;
 			children = (
-				844B4C5B21548DBD00DB10C6 /* YSTDialogBoxWindow.h */,
-				844B4C5C21548DBD00DB10C6 /* YSTDialogBoxWindow.m */,
 				844B4C4521548D7F00DB10C6 /* AppDelegate.h */,
 				844B4C4621548D7F00DB10C6 /* AppDelegate.m */,
 				844B4C4821548D7F00DB10C6 /* ViewController.h */,
@@ -111,7 +142,8 @@
 				844B4C5021548D8100DB10C6 /* LaunchScreen.storyboard */,
 				844B4C5321548D8100DB10C6 /* Info.plist */,
 				844B4C5421548D8100DB10C6 /* main.m */,
-				844B4C5E21548ED800DB10C6 /* Masonry */,
+				842C40682154C8AF00BB7D43 /* RippleAnimation */,
+				842C40622154C3A600BB7D43 /* DialogWindow */,
 			);
 			path = DialogWindow;
 			sourceTree = "<group>";
@@ -219,6 +251,8 @@
 				844B4C4F21548D8100DB10C6 /* Assets.xcassets in Resources */,
 				844B4C8621548ED900DB10C6 /* README.md in Resources */,
 				844B4C7B21548ED900DB10C6 /* LICENSE in Resources */,
+				842C40672154C3C000BB7D43 /* YSTDialogBoxController.xib in Resources */,
+				842C406D2154C8BD00BB7D43 /* YSTRippleAnimationController.xib in Resources */,
 				844B4C4D21548D7F00DB10C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,11 +273,13 @@
 				844B4C7E21548ED900DB10C6 /* MASCompositeConstraint.m in Sources */,
 				844B4C5521548D8100DB10C6 /* main.m in Sources */,
 				844B4C8221548ED900DB10C6 /* View+MASAdditions.m in Sources */,
+				842C406C2154C8BD00BB7D43 /* YSTRippleAnimationController.m in Sources */,
 				844B4C7F21548ED900DB10C6 /* MASConstraintMaker.m in Sources */,
 				844B4C8321548ED900DB10C6 /* MASConstraint.m in Sources */,
 				844B4C7C21548ED900DB10C6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				844B4C8021548ED900DB10C6 /* MASLayoutConstraint.m in Sources */,
 				844B4C4721548D7F00DB10C6 /* AppDelegate.m in Sources */,
+				842C40662154C3C000BB7D43 /* YSTDialogBoxController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
